@@ -5,3 +5,8 @@ $ mvn jetty:run
 ```
 
 go to http://localhost:8080/
+
+create JavaEE WAR
+$ mvn war:war
+
+
