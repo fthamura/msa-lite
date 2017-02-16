@@ -7,15 +7,15 @@
     <packaging>jar</packaging>
     <name>MSA Spring Boot Docker</name>
     <description>Getting started with Spring Boot and Docker</description>
-    
-    
+
+
      <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.2.3.RELEASE</version>
         <relativePath/>
     </parent>
-    
+
 	<properties>
 		<resteasy.version>3.0.11.Final</resteasy.version>
 		<spring.version>4.1.7.RELEASE</spring.version>
@@ -69,14 +69,14 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		
+
 		<!-- Swagger API Rest API -->
 		<dependency>
 			<groupId>io.swagger</groupId>
 			<artifactId>swagger-jaxrs</artifactId>
 			<version>${swagger.version}</version>
 		</dependency>
-		
+
 		<!-- Hibernate and JPA -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
@@ -88,7 +88,7 @@
 			<artifactId>hibernate-entitymanager</artifactId>
 			<version>${hibernate.version}</version>
 		</dependency>
-		
+
 		<!-- javax.inject and Spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -115,19 +115,24 @@
 			<artifactId>javax.inject</artifactId>
 			<version>1</version>
 		</dependency>
-		
+
 		<!-- Database Driver -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>${jdbc.mysql.version}</version>
 		</dependency>
-		
+
 		<!--  Spring Boot -->
 		<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+				<dependency>
+		 <groupId>org.springframework.boot</groupId>
+		 <artifactId>spring-boot-starter-tomcat</artifactId>
+		 <scope>provided</scope>
+ </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
